@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <div class="row">
+    <h3>Hola Mi nombre es: {{nombre}}</h3> // interpolacion de una variable
+    <h3>La suma de 20 + 20 es: {{getSuma(20,20)}}</h3> // interpolacion con un metodo
+    <br>
+    <br>
+    <input type="text" class="form-control" [placeholder]="textPlaceholder" [disabled]="deshabilitado"> // interpolacion property binding
+    <br>
+  </div>
+  <img [src]="img" alt="img" width="200px" height="200px">
+</div>
+
+<div class="container">
+  <br>
+  <h3>{{texto}}</h3>
+  <br>
+  <button class="btn btn-primary" (click)="cambiarTexto()">Hacer Click</button> <!-- interpolacion de un evento -->
+</div>
+
+<div class="container">
+  <br>
+  <input type="text" class="form-control" placeholder="Escriba algo aqui..." [(ngModel)]="texto2"> <!-- interpolacion de ngModel -->
+  <br>
+  <h3>{{texto2}}</h3>
+</div>
