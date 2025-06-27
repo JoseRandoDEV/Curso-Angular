@@ -12,10 +12,18 @@
         <th>Estado</th>
       </thead>
       <tbody *ngIf="listadoDeEstudiantes.length > 0">
-        <tr *ngFor="let estudiante of listadoDeEstudiantes; let i = index">
+        <tr *ngFor="let estudiante of listadoDeEstudiantes; let i = index" [ngSwitch]="estudiante.estado">
           <td>{{i+ 1}}</td>
           <td>{{estudiante.nombre}}</td>
-          <td>{{estudiante.estado}}</td>
+          <!-- <td [ngStyle]="{'font-style':estudiante.estado === 'Promocionado'? 'italic' : 'normal'}">{{estudiante.estado}}</td> -->
+          <!-- <td [ngClass]= "estudiante.estado === 'Promocionado'? 'bg bg-success' : 'bg bg-secondary'">{{estudiante.estado}}</td> -->
+          <td>
+            <!-- <span [ngClass]= "estudiante.estado === 'Promocionado'? 'bg bg-success' : 'bg bg-secondary'">{{estudiante.estado}}</span> -->
+            <!-- <span [ngClass]= "estudiante.estado === 'Promocionado'? 'badge bg-success' : 'badge bg-secondary'">{{estudiante.estado}}</span> -->
+            <span *ngSwitchCase="'Promocionado'" class="badge bg-success">{{estudiante.estado}}</span>
+            <span *ngSwitchCase="'Regular'" class="badge bg-secondary">{{estudiante.estado}}</span>
+            <span *ngSwitchCase="'Recursante'" class="badge bg-danger">{{estudiante.estado}}</span>
+          </td>
         </tr>
       </tbody>
       <h3 *ngIf="listadoDeEstudiantes.length === 0">No hay registros para mostrar</h3>
