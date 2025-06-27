@@ -9,10 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  listadoDeEstudiantes: any = [] =[
+  listadoDeEstudiantes: any = [] = [
     { nombre: 'Juan', estado: 'Promocionado' },
     { nombre: 'Ana', estado: 'Regular' },
     { nombre: 'Luis', estado: 'Regular' },
-    { nombre: 'María', estado: 'Recursante' },
+    { nombre: 'María', estado: 'Recursante' },  /*Si comento el array aparece el msj de no hay registros*/
   ]
+  mostar: boolean = true;
+  mostrarNoMostrar() {
+    this.mostar = !this.mostar;
+  }
 }

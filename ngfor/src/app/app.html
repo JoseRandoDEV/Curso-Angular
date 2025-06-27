@@ -1,6 +1,7 @@
 <div class="container" mt-4>
   <div class="row">
     <h1>Listado de estudiantes</h1>
+    <button class="btn btn-primary col-2" (click)="mostrarNoMostrar()">Mostrar/No Mostrar</button>
   </div>
   <div>
     <br>
@@ -10,13 +11,14 @@
         <th>Nombre</th>
         <th>Estado</th>
       </thead>
-      <tbody>
-        <tr *ngFor = "let estudiante of listadoDeEstudiantes; let i = index">
+      <tbody *ngIf="listadoDeEstudiantes.length > 0">
+        <tr *ngFor="let estudiante of listadoDeEstudiantes; let i = index">
           <td>{{i+ 1}}</td>
           <td>{{estudiante.nombre}}</td>
           <td>{{estudiante.estado}}</td>
         </tr>
       </tbody>
+      <h3 *ngIf="listadoDeEstudiantes.length === 0">No hay registros para mostrar</h3>
     </table>
   </div>
 </div>
