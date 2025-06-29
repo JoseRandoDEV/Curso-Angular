@@ -12,4 +12,3 @@ import { Navbar } from './components/navbar/navbar';
 export class App {
   title = 'Admin-Tareas';
 }
-
