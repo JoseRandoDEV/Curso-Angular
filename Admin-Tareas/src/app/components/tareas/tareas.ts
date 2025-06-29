@@ -23,4 +23,12 @@ export class Tareas {
     this.listaTareas.push(tarea);
     this.nombreTarea = '';
   }
+
+  eliminarTarea(i: number) {
+    this.listaTareas.splice(i, 1);
+  }
+
+  actualizarTarea(tarea: Tarea, i: number) {
+    this.listaTareas[i].estado = !tarea.estado;
+  }
 }
