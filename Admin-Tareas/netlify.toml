@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "Admin-Tareas/dist/Admin-Tareas/browser/index.html"
+  to = "Admin-Tareas/dist/browser/index.html"
   status = 200
