@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "Admin-Tareas/dist/browser/index.html"
-  status = 200
