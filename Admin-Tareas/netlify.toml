@@ -1,0 +1,10 @@
+[build]
+    command = "ng build"
+    publish = "Admin-Tareas/dist"
+    base = "/Admin-Tareas"
+
+[[redirects]]
+    from = "/*"
+    to = "Admin-Tareas/dist/index.html"
+    status = 200
+    
