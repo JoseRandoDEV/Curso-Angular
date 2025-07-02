@@ -20,11 +20,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [ 
               "src/assets",
-              "src/favicon.ico",
-              "src/_redirects",         
+              "src/favicon.ico",         
               {
-                "glob": "**/*",
-                "input": "public"
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
