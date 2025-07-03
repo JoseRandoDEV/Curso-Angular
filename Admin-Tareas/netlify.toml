@@ -1,5 +1,5 @@
 [build]
-  publish = "dist"
+  publish = "dist/admin-tareas/browser"
   command = "ng build"
   base = "/"
 
