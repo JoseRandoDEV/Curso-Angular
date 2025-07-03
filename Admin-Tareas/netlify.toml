@@ -3,4 +3,4 @@
   command = "ng build"
 
 [[redirects]]
-dist/admin-tareas/browser    /index.html   200
+dist   /index.html   200
