@@ -1,9 +1,9 @@
 [build]
-  publish = "dist/Admin-Tareas/browser"
+  publish = "dist"
   command = "ng serve"
   base = "/"
 
 [[redirects]]
 from = "/*"
-to = "dist/Admin-Tareas/browser/index.html"
+to = "/index.html"
 status = 200
