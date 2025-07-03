@@ -2,5 +2,5 @@
   publish = "dist"
   command = "ng build"
 
-[[redirects]]
+[redirects]
 /*   /index.html   200
