@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/admin-tareas/browser"
+  command = "ng build"
+
+
+   from = "/*"
+#  to = "/index.html"
+#  status = 200
