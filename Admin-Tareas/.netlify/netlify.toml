@@ -12,8 +12,8 @@ package = "@netlify/angular-runtime"
 [plugins.inputs]
 
 [build]
-publish = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\admin-tareas\\dist\\Admin-Tareas\\browser"
-publishOrigin = "inline"
+publish = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\admin-tareas\\admin-tareas\\dist\\admin-tareas\\browser"
+publishOrigin = "config"
 commandOrigin = "config"
 base = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\admin-tareas"
 command = "ng build"
