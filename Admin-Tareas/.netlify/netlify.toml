@@ -1,5 +1,5 @@
-redirectsOrigin = "config"
 headers = []
+redirects = []
 
 [functions]
 
@@ -12,11 +12,11 @@ package = "@netlify/angular-runtime"
 [plugins.inputs]
 
 [build]
-publish = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\admin-tareas\\admin-tareas\\dist\\admin-tareas\\browser"
-publishOrigin = "config"
-commandOrigin = "config"
-base = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\admin-tareas"
-command = "ng build"
+publish = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\Admin-Tareas\\dist"
+publishOrigin = "ui"
+commandOrigin = "ui"
+base = "C:\\Users\\Usuario\\Desktop\\Desarrollador Web Front-End\\Curso-Angular\\Admin-Tareas"
+command = "npm run build"
 
 [build.environment]
 
@@ -31,15 +31,3 @@ command = "ng build"
 [build.processing.js]
 
 [build.services]
-
-[[redirects]]
-from = "/*"
-to = "admin-tareas/dist/admin-tareas/browser/index.html"
-status = 200.0
-force = false
-
-[redirects.query]
-
-[redirects.conditions]
-
-[redirects.headers]
