@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
+            "outputPath": "dist/Admin-Tareas",
             "polyfills": [
               "zone.js"
             ],
