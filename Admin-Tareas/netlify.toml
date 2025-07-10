@@ -1,9 +1,0 @@
-[build]
-  command = "ng build"
-  publish = "admin-tareas/dist/admin-tareas/browser"
-  base = "/admin-tareas"
-
-[[redirects]]
-from = "/*"
-to = "admin-tareas/dist/admin-tareas/browser/index.html"
-status = 200
