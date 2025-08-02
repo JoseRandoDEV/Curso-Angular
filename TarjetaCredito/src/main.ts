@@ -1,6 +1,19 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { importProvidersFrom } from '@angular/core';
 import { App } from './app/app';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from './environments/environment';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(App, {
+  providers: [
+    importProvidersFrom(
+      AngularFireModule.initializeApp(environment.firebaseConfig),
+      AngularFirestoreModule
+    ),
+  ],
+}).catch((err) => 
+  console.error('Error bootstrapping the application:', err)
+);
+  
+
